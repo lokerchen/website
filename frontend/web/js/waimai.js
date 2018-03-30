@@ -782,8 +782,22 @@ var CART = {
           data = JSON.parse(data);
           INFO.alert_info(data.message);
         }else{
-          $(".order-options-modal .content").html(data);
-          $(".order-options-modal").modal();
+            //返回值为空，说明只有一个菜品可选择，直接返回，不跳出选择对话框
+            if (data.length >= 1)
+            {
+                if (data.indexOf('<div') == -1)
+                {
+                    var free_goods = data;
+                    $("input[name='cart\[additional\]']").val(free_goods);
+                    //CART.additional(free_goods);
+                    $(".cart-checkout-from").submit();
+                }
+                else
+                {
+                    $(".order-options-modal .content").html(data);
+                    $(".order-options-modal").modal();
+                }
+            }
         }
         return false;
       },

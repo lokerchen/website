@@ -6,6 +6,16 @@ use common\models\GoodsOptions;
 
 $coupon = isset($list['coupon']) ? $list['coupon'] : '';
 $goods = isset($list['goods']) ? $list['goods'] : '';
+
+//只赠送一个优惠时
+if (count($goods) <= 1){
+    $str = '';
+    foreach ($goods as $k => $v) {
+        $str = $v['title'];
+    }
+    echo $str;
+    return;
+}
 ?>
 
 
