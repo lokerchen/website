@@ -238,7 +238,7 @@ class Order extends \yii\db\ActiveRecord
     </div></strong>
 
     <p><strong>Name:&nbsp;'.$this->shipment_name.'</strong></p>
-    <p><strong>Phone:&nbsp;'.$this->shipment_phone.'<strong></p>';
+    <p><strong>Phone:&nbsp;'.$this->shipment_phone.'</strong></p>';
     if($this->order_type=='deliver'){
       $mhtml .= '
       <p><strong>Address:&nbsp;'.$this->shipment_addr1.'</p>
