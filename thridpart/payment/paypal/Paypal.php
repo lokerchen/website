@@ -164,9 +164,9 @@ class Paypal extends Payment
              $submit_css = 'style="display:none;"';
         }
 
-        $returnUrl = 'http://' . $headers . '/thankyou.php';
+        $returnUrl = 'https://' . $headers . '/thankyou.php';
         $returnUrl = Url::to(['/cart/confirm-thank'], true);
-        $returnUrl = 'http://' . $headers . '/thankyou-pp.php';
+        $returnUrl = 'https://' . $headers . '/thankyou-pp.php';
 
         $this->config['cancel_return'] = Url::to(['/member/default/review','id'=>$this->order['order_id'],'flat'=>1],true);
 

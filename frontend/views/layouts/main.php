@@ -1118,7 +1118,7 @@ addToHomescreen();
             <div class="btn btn-link a-link"><a href="/index.php?r=site%2Fsignup" target="_self"><span class="glyphicon glyphicon-user"></span> Sign Up</a></div>
 
             <div style="float:right;">
-              <?php echo '<a href="https://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="http://milpo.co.uk/frontend/web/images/share.png" width="100px;" /></a>'; ?>
+              <?php echo '<a href="https://www.facebook.com/sharer/sharer.php?u=https://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="https://milpo.co.uk/frontend/web/images/share.png" width="100px;" /></a>'; ?>
             </div>
           <?php else:?>
 
@@ -1128,7 +1128,7 @@ addToHomescreen();
             <div class="btn btn-link a-link"><a href="/index.php?r=site%2Flogout" target="_self"><span class="glyphicon glyphicon-user"></span> Logout</a></div>
 
             <div style="float:right;">
-              <?php echo '<a href="https://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="http://milpo.co.uk/frontend/web/images/share.png" width="100px;" /></a>'; ?>
+              <?php echo '<a href="https://www.facebook.com/sharer/sharer.php?u=https://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="https://milpo.co.uk/frontend/web/images/share.png" width="100px;" /></a>'; ?>
             </div>
           <?php endif;?>
         </div>
@@ -1203,7 +1203,7 @@ addToHomescreen();
       $worldpayID .= $worldpay['options']['instId'];
       $worldpayStatus = $worldpay['status'];
 
-      $worldpayFullJS = '<a class="visible-xs" href="http://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/fb-large.png" /></a>
+      $worldpayFullJS = '<a class="visible-xs" href="http://www.facebook.com/sharer/sharer.php?u=https://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="https://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/fb-large.png" /></a>
       <br /><center><script language="JavaScript" src="https://secure.worldpay.com/wcc/logo?instId='.$worldpayID.'"></script></center>';
 
       echo '<p>'.$company_name.' © '.date("Y").' All Rights Reserved</p>';
@@ -1211,8 +1211,8 @@ addToHomescreen();
       $footer = getPageByKey('footer');
       echo showContent($footer['content']);
 
-      $basicFooter = '<a class="visible-xs" href="http://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/fb-large.png" /></a>
-      <span><img style="padding-left:5px;" src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/visa.png" /></span> <span><img style="padding-top: 6px;padding-left:5px;" src="http://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/code.png" /></span>';
+      $basicFooter = '<a class="visible-xs" href="http://www.facebook.com/sharer/sharer.php?u=https://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="https://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/fb-large.png" /></a>
+      <span><img style="padding-left:5px;" src="https://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/visa.png" /></span> <span><img style="padding-top: 6px;padding-left:5px;" src="https://'.$_SERVER['SERVER_NAME'].'/frontend/web/images/code.png" /></span>';
       // IF CASH ONLY, COMMENT THIS ABOVE
       // $basicFooter = '<span>We Accept Cash Only, </span>';
 
@@ -1237,7 +1237,7 @@ addToHomescreen();
       echo '</div>
       <div class="fot-r">
 
-      Powered by Milpo Technologies, <a href="http://www.milpo.co.uk" target="_blank">www.milpo.co.uk</a>
+      Powered by Milpo Technologies, <a href="https://www.milpo.co.uk" target="_blank">www.milpo.co.uk</a>
       </div>
       <div class="clearfix">
       </div>

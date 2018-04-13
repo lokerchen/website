@@ -1,6 +1,6 @@
 <?php
 // 设置用户权限
-define("SITE_URL","http://".$_SERVER['HTTP_HOST'].'');
+define("SITE_URL","https://".$_SERVER['HTTP_HOST'].'');
 
 // 獲取cache信息
 function cacheconfig(){

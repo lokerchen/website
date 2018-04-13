@@ -3,7 +3,7 @@ $headers = $_SERVER['SERVER_NAME'];
 
 //echo "HTTP_HOST [{$_SERVER['HTTP_HOST']}]\n"; echo "SERVER_NAME [{$_SERVER['SERVER_NAME']}]";
 
-$url = 'http://' . $headers . '/index.php?r=cart/confirm-thank';
+$url = 'https://' . $headers . '/index.php?r=cart/confirm-thank';
 if (isset($_SERVER['QUERY_STRING']) && !empty($_SERVER['QUERY_STRING'])) {
   $url .= '&' . $_SERVER['QUERY_STRING'];
 }

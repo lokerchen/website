@@ -4,7 +4,7 @@ $headers = $_SERVER['SERVER_NAME'];
 
 //echo "HTTP_HOST [{$_SERVER['HTTP_HOST']}]\n"; echo "SERVER_NAME [{$_SERVER['SERVER_NAME']}]";
 
-echo '<center><a href="http://'.$headers.'/index.php?r=site/index">Return to homepage</a></center></div>';
+echo '<center><a href="https://'.$headers.'/index.php?r=site/index">Return to homepage</a></center></div>';
 //echo $headers;
 
 ?>

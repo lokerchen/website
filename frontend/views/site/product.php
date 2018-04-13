@@ -62,7 +62,7 @@ use common\models\Config;
                 if (!isset($webtemp)){ echo ' '; }
                 elseif ($webtemp == 2){
                   if(!empty($_v['pic'])){ $shtml .= '<img class="img-rounded zoom" src="'.$_v['pic'].'" height="42" width="42"> '; } else {
-                    $shtml .= '<img class="img-rounded" src="http://'.$_SERVER['SERVER_NAME'].'/uploads/noimg.jpg" height="42" width="42"> ';
+                    $shtml .= '<img class="img-rounded" src="https://'.$_SERVER['SERVER_NAME'].'/uploads/noimg.jpg" height="42" width="42"> ';
                   }
                 }
 
