@@ -1118,7 +1118,7 @@ addToHomescreen();
             <div class="btn btn-link a-link"><a href="/index.php?r=site%2Fsignup" target="_self"><span class="glyphicon glyphicon-user"></span> Sign Up</a></div>
 
             <div style="float:right;">
-              <?php echo '<a href="https://www.facebook.com/sharer/sharer.php?u=https://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="https://milpo.co.uk/frontend/web/images/share.png" width="100px;" /></a>'; ?>
+              <?php echo '<a href="https://www.facebook.com/sharer/sharer.php?u=http://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="http://milpo.co.uk/frontend/web/images/share.png" width="100px;" /></a>'; ?>
             </div>
           <?php else:?>
 
@@ -1128,7 +1128,7 @@ addToHomescreen();
             <div class="btn btn-link a-link"><a href="/index.php?r=site%2Flogout" target="_self"><span class="glyphicon glyphicon-user"></span> Logout</a></div>
 
             <div style="float:right;">
-              <?php echo '<a href="https://www.facebook.com/sharer/sharer.php?u=https://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="https://milpo.co.uk/frontend/web/images/share.png" width="100px;" /></a>'; ?>
+              <?php echo '<a href="https://www.facebook.com/sharer/sharer.php?u=https://'.$_SERVER['SERVER_NAME'].'" target="_blank"><img src="http://milpo.co.uk/frontend/web/images/share.png" width="100px;" /></a>'; ?>
             </div>
           <?php endif;?>
         </div>
